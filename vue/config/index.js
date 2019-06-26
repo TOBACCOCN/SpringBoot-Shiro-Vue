@@ -22,7 +22,7 @@ module.exports = {
   },
   dev: {
     env: require('./dev.env'),
-    host: '192.168.1.144',
+    host: '127.0.0.1',
     port: 9520,
     autoOpenBrowser: true,
     autoOpenPage: '/login',
@@ -30,7 +30,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'https://localhost:8800',
+        target: 'https://127.0.0.1:8800',
         // changeOrigin: true,
         secure: false,
         // headers: {
