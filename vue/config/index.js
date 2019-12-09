@@ -31,11 +31,7 @@ module.exports = {
     proxyTable: {
       '/api': {
         target: 'https://127.0.0.1:8800',
-        // changeOrigin: true,
         secure: false,
-        // headers: {
-        //   Referer: 'https://localhost:8443'
-        // },
         pathRewrite: {
           '^/api': '/'
         }
